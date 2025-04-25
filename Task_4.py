@@ -18,7 +18,7 @@ class TestClass2(TestClass1):
     pass
 
 
-# Creating an instance of MyClass
+# Creating an instance of TestClass
 my_instance = TestClass1()
 my_instance = TestClass2()
 
