@@ -1,0 +1,10 @@
+Task: Explain the difference between deepcopy() and copy() in Python. Give an example where using one over the other would lead to unexpected behavior.
+
+
+deepcopy() creates a deep copy of an object. It makes completely independent copies of all objects found in the original object.
+
+copy() creates a shallow copy of an object. It copies the outer object, but if that object contains other objects inside (like lists or dictionaries), those are still shared between the original and the copy
+
+
+So say you're working on a team, and you're all using a shared document template. If you use shallow copy [copy()], then editing a section maybe like a chart might also change in someone else's copy because its still linked. On the other hand if you use deepcopy(), yoou get your own version of the document, so changes you make are completely separate.
+In Python terms copy() copies the outside, but inner parts are still shared while deepcopy() copies everything, including what's inside.
