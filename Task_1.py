@@ -18,7 +18,7 @@ def measure_execution_time(func):
         return result
     return wrapper
 
-# Example usage
+# Example 
 @measure_execution_time
 def count_words_in_text(text):
     words = text.split()
